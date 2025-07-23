@@ -14,7 +14,7 @@ export const siteConfig = {
     },
     {
       label: "Pricing",
-      href: "/pricing",
+      href: "#pricing",
     },
     {
       label: "Blog",
@@ -27,21 +27,37 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Profile",
+      href: "/profile",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Dashboard",
+      href: "/dashboard",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Projects",
+      href: "/projects",
     },
     {
-      label: "About",
-      href: "/about",
-    }, 
+      label: "Team",
+      href: "/team",
+    },
+    {
+      label: "Calendar",
+      href: "/calendar",
+    },
+    {
+      label: "Settings",
+      href: "/settings",
+    },
+    {
+      label: "Help & Feedback",
+      href: "/help-feedback",
+    },
+    {
+      label: "Logout",
+      href: "/logout",
+    },
   ],
   links: {
     github: "https://github.com/Kodix-dev",
