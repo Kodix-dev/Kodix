@@ -12,7 +12,7 @@ export default function IndexPage() {
             <div className="lg:w-2/3">
               <p className={subtitle()}>We Design, Develop, & Secure</p>
               <h1 className="mt-6 text-4xl font-normal sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-slate-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
                   You Dream it,
                 </span>{" "}
                 <br></br>
@@ -25,7 +25,7 @@ export default function IndexPage() {
                 mind — helping your business grow with confidence.
               </p>
               <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-slate-500 to-red-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
+                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-orange-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
                 <a
                   href={siteConfig.navItems[2].href}
                   className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal border border-transparent rounded-full"
@@ -96,7 +96,7 @@ export default function IndexPage() {
 
       <section className="py-16 pt-50 px-4 md:px-8 max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-slate-500 to-red-500">Here at Kodix</h2>
+          <h2 className="py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-orange-300 to-red-500">Here at Kodix</h2>
           <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
             We are your partner in digital innovation — combining top-notch
             web development, stunning design, and reliable security to bring
@@ -149,20 +149,18 @@ export default function IndexPage() {
               <div className="p-6">
                 <h2 className="text-xl leading-6 font-bold">Starter</h2>
                 <p className="mt-2 text-base leading-tight">
-                  For new makers who want to fine-tune and test an idea.
+                For individuals & small businesses
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-bold tracking-tighter">
-                    $0
+                  €150
                   </span>
-
-                  <span className="text-base font-medium">/mo</span>
                 </p>
                 <a
                   href="/sign-up"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  Join as a Starter
+                  Contact us as a Starter
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">
@@ -187,7 +185,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">1 landing page included</span>
+                    <span className="text-base">1-5 page static website</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -206,7 +204,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">1,000 visits/mo</span>
+                    <span className="text-base">Custom design (basic)</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -225,7 +223,26 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">Access to all UI blocks</span>
+                    <span className="text-base">Mobile responsive</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">SEO setup (basic)</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -245,7 +262,7 @@ export default function IndexPage() {
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
                     <span className="text-base">
-                      50 conversion actions included
+                    Basic security setup (HTTPS, form spam protection)
                     </span>
                   </li>
                   <li className="flex space-x-3">
@@ -265,7 +282,187 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">5% payment commission</span>
+                    <span className="text-base">Delivery in 7–10 days</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Real-time analytics</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="border shadow-[0px_8px_19px_-2px_rgba(140,_0,_255,_0.65)] border-slate-200 rounded-lg divide-y divide-slate-200 ">
+              <div className="p-6">
+                <h2 className="text-xl leading-6 font-bold">Professional</h2>
+                <p className="mt-2 text-base leading-tight">
+                For growing businesses
+                </p>
+                <p className="mt-8">
+                  <span className="text-4xl font-bold tracking-tighter">
+                  €500
+                  </span>
+                </p>
+                <a
+                  href="/sign-up"
+                  className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
+                >
+                  Contact us as a Professional
+                </a>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <h3 className="text-sm font-bold tracking-wide uppercase">
+                  What's included
+                </h3>
+                <ul role="list" className="mt-4 space-y-3">
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Up to 10 pages</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Custom design with animations</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Mobile responsive</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">SEO setup (basic)</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">
+                    Contact form + mailing integration
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Security hardening (headers, basic WAF, etc.)</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Delivery in 10–14 days</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -291,23 +488,20 @@ export default function IndexPage() {
             </div>
             <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
               <div className="p-6">
-                <h2 className="text-xl leading-6 font-bold">Superior</h2>
+                <h2 className="text-xl leading-6 font-bold">Premium</h2>
                 <p className="mt-2 text-base leading-tight">
-                  For creators with multiple ideas who want to efficiently test
-                  and refine them.
+                For serious brands/startups
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-bold tracking-tighter">
-                    $8
+                  €1,200+
                   </span>
-
-                  <span className="text-base font-medium">/mo</span>
                 </p>
                 <a
                   href="/sign-up"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  Join as a Superior
+                  Join our Premium plan
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">
@@ -332,7 +526,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">All Free features</span>
+                    <span className="text-base">Custom web app or e-commerce</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -351,7 +545,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">5 landing pages included</span>
+                    <span className="text-base">Custom web app or e-commerce</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -370,8 +564,85 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">50,000 visits/mo</span>
+                    <span className="text-base">Mobile Responsive</span>
                   </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Advanced SEO</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Contact form + mailing integration</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Security hardening (headers, basic WAF, etc.)</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Admin panel/backend</span>
+                  </li>
+                  
                   <li className="flex space-x-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +661,7 @@ export default function IndexPage() {
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
                     <span className="text-base">
-                      1,000 conversion actions included
+                    Admin panel/backend
                     </span>
                   </li>
                   <li className="flex space-x-3">
@@ -410,54 +681,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">1% payment commission</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-              <div className="p-6">
-                <h2 className="text-xl leading-6 font-bold">Shipper</h2>
-                <p className="mt-2 text-base leading-tight">
-                  For productive shippers who want to work more efficiently.
-                </p>
-                <p className="mt-8">
-                  <span className="text-4xl font-bold tracking-tighter">
-                    $15
-                  </span>
-
-                  <span className="text-base font-medium">/mo</span>
-                </p>
-                <a
-                  href="/sign-up"
-                  className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
-                >
-                  Join as a Shipper
-                </a>
-              </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-sm font-bold tracking-wide uppercase">
-                  What's included
-                </h3>
-                <ul role="list" className="mt-4 space-y-3">
-                  <li className="flex space-x-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="flex-shrink-0 h-5 w-5 text-green-400"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M5 12l5 5l10 -10"></path>
-                    </svg>
-                    <span className="text-base">All Standard features</span>
+                    <span className="text-base">Ongoing support (1 month included)</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -476,7 +700,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">20 landing pages included</span>
+                    <span className="text-base">Delivery in 3–4 weeks</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -495,7 +719,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">200,000 visits/mo</span>
+                    <span className="text-base">Real-time analytics</span>
                   </li>
                   <li className="flex space-x-3">
                     <svg
@@ -514,28 +738,7 @@ export default function IndexPage() {
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M5 12l5 5l10 -10"></path>
                     </svg>
-                    <span className="text-base">
-                      5,000 conversion actions included
-                    </span>
-                  </li>
-                  <li className="flex space-x-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="flex-shrink-0 h-5 w-5 text-green-400"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M5 12l5 5l10 -10"></path>
-                    </svg>
-                    <span className="text-base">No payment commission</span>
+                    <span className="text-base">+ more custom features per request!</span>
                   </li>
                 </ul>
               </div>
