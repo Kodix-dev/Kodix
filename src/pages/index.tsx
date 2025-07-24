@@ -163,7 +163,7 @@ export default function IndexPage() {
                   href="/sign-up"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  Contact us as a Starter
+                  Contact us for a Basic plan
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">
@@ -324,7 +324,7 @@ export default function IndexPage() {
                   href="/sign-up"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  Contact us as a Professional
+                  Contact us for a Professional plan
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">
@@ -504,7 +504,7 @@ export default function IndexPage() {
                   href="/sign-up"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  Join our Premium plan
+                  Contact us for a Premium plan
                 </a>
               </div>
               <div className="pt-6 pb-8 px-6">
