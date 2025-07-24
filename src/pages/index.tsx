@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { motion } from "motion/react";
 
 export default function IndexPage() {
+  console.log(siteConfig.navItems[2].href);
   return (
     <DefaultLayout>
       <section>
@@ -31,6 +32,7 @@ export default function IndexPage() {
                   className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal border border-transparent rounded-full"
                   role="button"
                 >
+                  
                   See what we're about
                 </a>
               </div>
