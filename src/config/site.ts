@@ -41,7 +41,7 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/Kodix-dev",
-    twitter: "https://twitter.com/hero_ui",
+    twitter: "https://x.com/kodixdev",
     docs: "https://heroui.com",
     discord: "https://discord.gg/9b6yyZKmH4",
     instagram: "https://www.instagram.com/kodix.dev/",
