@@ -150,7 +150,7 @@ export default function IndexPage() {
           <div className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
             <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
               <div className="p-6">
-                <h2 className="text-xl leading-6 font-bold">Starter</h2>
+                <h2 className="text-xl leading-6 font-bold">Basic</h2>
                 <p className="mt-2 text-base leading-tight">
                 For individuals & small businesses
                 </p>
