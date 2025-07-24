@@ -2,6 +2,7 @@ import { subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { siteConfig } from "@/config/site";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function IndexPage() {
   console.log(siteConfig.navItems[2].href);
@@ -27,14 +28,15 @@ export default function IndexPage() {
               </p>
               <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-orange-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
-                <a
-                  href={siteConfig.navItems[2].href}
+                <Link
+                  to={siteConfig.navItems[2].href}
                   className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal border border-transparent rounded-full"
                   role="button"
                 >
                   
                   See what we're about
-                </a>
+                
+                </Link>
               </div>
 
               <div>
