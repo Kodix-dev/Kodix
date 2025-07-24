@@ -1,10 +1,9 @@
 import { subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { siteConfig } from "@/config/site";
-
+import { motion } from "motion/react";
 
 export default function IndexPage() {
-
   return (
     <DefaultLayout>
       <section>
@@ -13,7 +12,7 @@ export default function IndexPage() {
             <div className="lg:w-2/3">
               <p className={subtitle()}>We Design, Develop, & Secure</p>
               <h1 className="mt-6 text-4xl font-normal sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-slate-500">
                   You Dream it,
                 </span>{" "}
                 <br></br>
@@ -26,9 +25,9 @@ export default function IndexPage() {
                 mind — helping your business grow with confidence.
               </p>
               <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
-                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-red-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
+                <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-slate-500 to-red-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
                 <a
-                  href={siteConfig.navItems[4].href}
+                  href={siteConfig.navItems[2].href}
                   className="relative inline-flex items-center justify-center px-8 py-3 text-base font-normal border border-transparent rounded-full"
                   role="button"
                 >
@@ -78,449 +77,472 @@ export default function IndexPage() {
                 </div>
               </div>
             </div>
-
             <div className="mt-8 md:absolute md:mt-0 md:top-32 lg:top-0 md:right-0">
-              <img
-                className="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl"
-                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
-                alt=""
-              />
+              <motion.div
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+              >
+                <img
+                  className="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl"
+                  src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
+                  alt=""
+                />
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
-      <div id="pricing" className="sm:flex sm:flex-col sm:align-center pw-10 pt-25">
-      
-      <div className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
-        <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-          <div className="p-6">
-            <h2 className="text-xl leading-6 font-bold">
-              Starter
-            </h2>
-            <p className="mt-2 text-base leading-tight">
-              For new makers who want to fine-tune and test an idea.
-            </p>
-            <p className="mt-8">
-              <span className="text-4xl font-bold tracking-tighter">
-                $0
-              </span>
 
-              <span className="text-base font-medium">/mo</span>
+      <section className="py-16 pt-50 px-4 md:px-8 max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-slate-500 to-red-500">Here at Kodix</h2>
+          <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            We are your partner in digital innovation — combining top-notch
+            web development, stunning design, and reliable security to bring
+            your ideas to life.
+          </p>
+        </div>
+<motion.div
+        initial={{ y: "10vh", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
+            <h3 className="text-2xl font-semibold mb-2">💻 Development</h3>
+            <p className="text-base leading-relaxed">
+              We build custom, scalable web applications tailored to your needs,
+              using the latest technologies and clean code.
             </p>
-            <a
-              href="/sign-up"
-              className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
-            >
-              Join as a Starter
-            </a>
           </div>
-          <div className="pt-6 pb-8 px-6">
-            <h3 className="text-sm font-bold tracking-wide uppercase">
-              What's included
-            </h3>
-            <ul role="list" className="mt-4 space-y-3">
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  1 landing page included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  1,000 visits/mo
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  Access to all UI blocks
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  50 conversion actions included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  5% payment commission
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  Real-time analytics
-                </span>
-              </li>
-            </ul>
+
+          <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
+            <h3 className="text-2xl font-semibold mb-2">🎨 Design</h3>
+            <p className="text-base leading-relaxed">
+              Our designs are crafted to captivate — blending functionality and
+              aesthetic to create seamless user experiences.
+            </p>
+          </div>
+
+          <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
+            <h3 className="text-2xl font-semibold mb-2">🔐 Security</h3>
+            <p className="text-base leading-relaxed">
+              From secure coding practices to penetration testing, we make sure
+              your digital products are protected from the start.
+            </p>
           </div>
         </div>
-        <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-          <div className="p-6">
-            <h2 className="text-xl leading-6 font-bold">
-              Superior
-            </h2>
-            <p className="mt-2 text-base leading-tight">
-              For creators with multiple ideas who want to efficiently test and
-              refine them.
-            </p>
-            <p className="mt-8">
-              <span className="text-4xl font-bold tracking-tighter">
-                $8
-              </span>
+          </motion.div>
+      </section>
+      <motion.div
+        initial={{ y: "10vh", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
+        <div
+          className="sm:flex sm:flex-col sm:align-center pw-10 pt-25"
+        >
+          <h1 className={" py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-red-500 to-purple-500"}>Pricing</h1>
+          <div className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
+            <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+              <div className="p-6">
+                <h2 className="text-xl leading-6 font-bold">Starter</h2>
+                <p className="mt-2 text-base leading-tight">
+                  For new makers who want to fine-tune and test an idea.
+                </p>
+                <p className="mt-8">
+                  <span className="text-4xl font-bold tracking-tighter">
+                    $0
+                  </span>
 
-              <span className="text-base font-medium">/mo</span>
-            </p>
-            <a
-              href="/sign-up"
-              className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
-            >
-              Join as a Superior
-            </a>
-          </div>
-          <div className="pt-6 pb-8 px-6">
-            <h3 className="text-sm font-bold tracking-wide uppercase">
-              What's included
-            </h3>
-            <ul role="list" className="mt-4 space-y-3">
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+                  <span className="text-base font-medium">/mo</span>
+                </p>
+                <a
+                  href="/sign-up"
+                  className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  All Free features
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+                  Join as a Starter
+                </a>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <h3 className="text-sm font-bold tracking-wide uppercase">
+                  What's included
+                </h3>
+                <ul role="list" className="mt-4 space-y-3">
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">1 landing page included</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">1,000 visits/mo</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Access to all UI blocks</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">
+                      50 conversion actions included
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">5% payment commission</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">Real-time analytics</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+              <div className="p-6">
+                <h2 className="text-xl leading-6 font-bold">Superior</h2>
+                <p className="mt-2 text-base leading-tight">
+                  For creators with multiple ideas who want to efficiently test
+                  and refine them.
+                </p>
+                <p className="mt-8">
+                  <span className="text-4xl font-bold tracking-tighter">
+                    $8
+                  </span>
+
+                  <span className="text-base font-medium">/mo</span>
+                </p>
+                <a
+                  href="/sign-up"
+                  className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  5 landing pages included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
+                  Join as a Superior
+                </a>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <h3 className="text-sm font-bold tracking-wide uppercase">
+                  What's included
+                </h3>
+                <ul role="list" className="mt-4 space-y-3">
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">All Free features</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">5 landing pages included</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">50,000 visits/mo</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">
+                      1,000 conversion actions included
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">1% payment commission</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+              <div className="p-6">
+                <h2 className="text-xl leading-6 font-bold">Shipper</h2>
+                <p className="mt-2 text-base leading-tight">
+                  For productive shippers who want to work more efficiently.
+                </p>
+                <p className="mt-8">
+                  <span className="text-4xl font-bold tracking-tighter">
+                    $15
+                  </span>
+
+                  <span className="text-base font-medium">/mo</span>
+                </p>
+                <a
+                  href="/sign-up"
+                  className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  50,000 visits/mo
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  1,000 conversion actions included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  1% payment commission
-                </span>
-              </li>
-            </ul>
+                  Join as a Shipper
+                </a>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <h3 className="text-sm font-bold tracking-wide uppercase">
+                  What's included
+                </h3>
+                <ul role="list" className="mt-4 space-y-3">
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">All Standard features</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">20 landing pages included</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">200,000 visits/mo</span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">
+                      5,000 conversion actions included
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-shrink-0 h-5 w-5 text-green-400"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M5 12l5 5l10 -10"></path>
+                    </svg>
+                    <span className="text-base">No payment commission</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
-          <div className="p-6">
-            <h2 className="text-xl leading-6 font-bold">
-              Shipper
-            </h2>
-            <p className="mt-2 text-base leading-tight">
-              For productive shippers who want to work more efficiently.
-            </p>
-            <p className="mt-8">
-              <span className="text-4xl font-bold tracking-tighter">
-                $15
-              </span>
-
-              <span className="text-base font-medium">/mo</span>
-            </p>
-            <a
-              href="/sign-up"
-              className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
-            >
-              Join as a Shipper
-            </a>
-          </div>
-          <div className="pt-6 pb-8 px-6">
-            <h3 className="text-sm font-bold tracking-wide uppercase">
-              What's included
-            </h3>
-            <ul role="list" className="mt-4 space-y-3">
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  All Standard features
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  20 landing pages included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  200,000 visits/mo
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  5,000 conversion actions included
-                </span>
-              </li>
-              <li className="flex space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="flex-shrink-0 h-5 w-5 text-green-400"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M5 12l5 5l10 -10"></path>
-                </svg>
-                <span className="text-base">
-                  No payment commission
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+      </motion.div>
     </DefaultLayout>
   );
 }
