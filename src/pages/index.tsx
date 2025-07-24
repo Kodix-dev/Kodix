@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
 export default function IndexPage() {
-  console.log(siteConfig.navItems[2].href);
   return (
     <DefaultLayout>
       <section>
