@@ -85,7 +85,7 @@ export default function ContactPage() {
                 Visit our office HQ..
               </p>
               <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
-                100 Smith Street Collingwood VIC 3066 AU
+                Zenica, Bosnia and Herzegovina
               </p>
             </div>
 
@@ -227,6 +227,7 @@ export default function ContactPage() {
                   Full Name
                 </label>
                 <input
+                  required
                   name="name"
                   type="text"
                   placeholder="John Doe"
@@ -241,6 +242,8 @@ export default function ContactPage() {
                 <input
                   name="email"
                   type="email"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   placeholder="johndoe@example.com"
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
@@ -252,13 +255,17 @@ export default function ContactPage() {
                 Message
               </label>
               <textarea
+                required
                 name="message"
                 className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Message"
               ></textarea>
             </div>
 
-            <button type="submit" className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button
+              type="submit"
+              className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+            >
               get in touch
             </button>
           </form>
