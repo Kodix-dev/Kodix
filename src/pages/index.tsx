@@ -89,7 +89,7 @@ export default function IndexPage() {
                 <img
                   className="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl"
                   src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
-                  alt=""
+                  alt="swirly 3D illustration"
                 />
               </motion.div>
             </div>
@@ -146,7 +146,7 @@ export default function IndexPage() {
         <div
           className="sm:flex sm:flex-col sm:align-center pw-10 pt-25"
         >
-          <h1 className={" py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-red-500 to-purple-500"}>Pricing</h1>
+          <h2 className={" py-3 text-transparent bg-clip-text text-5xl font-bold text-center bg-gradient-to-r from-red-500 to-purple-500"}>Pricing</h2>
           <div className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
             <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
               <div className="p-6">

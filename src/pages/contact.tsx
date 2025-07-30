@@ -192,9 +192,9 @@ export default function ContactPage() {
 
       <section className="min-h-screen lg:flex">
         <div className="flex flex-col justify-center w-full p-8 lg:px-12 xl:px-32 lg:w-1/2">
-          <h1 className="text-2xl capitalize inline-block lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
+          <h3 className="text-2xl capitalize inline-block lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
             hire us pleeease.
-          </h1>
+          </h3>
           <span className="text-5xl ml-4.5">🥹</span>
           <span className="text-4xl">👉👈</span>
 
