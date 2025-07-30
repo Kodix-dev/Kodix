@@ -32,19 +32,19 @@ export default function ContactPage() {
   >
     <defs>
     <linearGradient id="linear-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="10%" stop-color="#FFB000" />
-      <stop offset="60%" stop-color="#FD6F01" />
-      <stop offset="100%" stop-color="#BB1900" />
+      <stop offset="10%" stopColor="#FFB000" />
+      <stop offset="60%" stopColor="#FD6F01" />
+      <stop offset="100%" stopColor="#BB1900" />
     </linearGradient>
     <linearGradient id="purple-linear-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="10%" stop-color="#e1306c" />
-      <stop offset="60%" stop-color="#c13584" />
-      <stop offset="100%" stop-color="#833ab4" />
+      <stop offset="10%" stopColor="#e1306c" />
+      <stop offset="60%" stopColor="#c13584" />
+      <stop offset="100%" stopColor="#833ab4" />
     </linearGradient>
     <linearGradient id="center-linear-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="10%" stop-color="#e1306c" />
-    <stop offset="80%" stop-color="#FFB000" />
-      <stop offset="100%" stop-color="#BB1900" />
+      <stop offset="10%" stopColor="#e1306c" />
+    <stop offset="80%" stopColor="#FFB000" />
+      <stop offset="100%" stopColor="#BB1900" />
     </linearGradient>
   </defs>
     <path
