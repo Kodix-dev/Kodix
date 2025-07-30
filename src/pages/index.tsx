@@ -11,7 +11,7 @@ export default function IndexPage() {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="relative">
             <div className="lg:w-2/3">
-              <p className={subtitle()}>We Design, Develop, & Secure</p>
+              <h1 className={subtitle()}>We Design, Develop, & Secure</h1>
               <h1 className="mt-6 text-4xl font-normal sm:mt-10 sm:text-5xl lg:text-6xl xl:text-8xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
                   You Dream it,
