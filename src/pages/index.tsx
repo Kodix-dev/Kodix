@@ -159,12 +159,12 @@ export default function IndexPage() {
                   €150
                   </span>
                 </p>
-                <a
-                  href="/sign-up"
+                <Link
+                  to="/contact"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
                   Contact us for a Basic plan
-                </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold tracking-wide uppercase">
@@ -320,12 +320,12 @@ export default function IndexPage() {
                   €500
                   </span>
                 </p>
-                <a
-                  href="/sign-up"
+                <Link
+                  to="/contact"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
                   Contact us for a Professional plan
-                </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold tracking-wide uppercase">
@@ -500,12 +500,12 @@ export default function IndexPage() {
                   €1,200+
                   </span>
                 </p>
-                <a
-                  href="/sign-up"
+                <Link
+                  to="/contact"
                   className="mt-8 block w-full bg-slate-900 rounded-md py-2 text-sm font-semibold text-white text-center"
                 >
                   Contact us for a Premium plan
-                </a>
+                </Link>
               </div>
               <div className="pt-6 pb-8 px-6">
                 <h3 className="text-sm font-bold tracking-wide uppercase">
