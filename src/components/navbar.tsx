@@ -1,4 +1,3 @@
-
 import { Link } from "@heroui/link";
 import {
   Navbar as HeroUINavbar,
@@ -23,7 +22,6 @@ import {
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
-
   return (
     <HeroUINavbar maxWidth="xl" position="sticky" shouldHideOnScroll>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -43,7 +41,7 @@ export const Navbar = () => {
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
@@ -60,7 +58,7 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-        <Link isExternal href={siteConfig.links.instagram} title="Twitter">
+          <Link isExternal href={siteConfig.links.instagram} title="Twitter">
             <InstagramIcon className="text-default-500" />
           </Link>
           <Link isExternal href={siteConfig.links.facebook} title="Twitter">
@@ -77,12 +75,6 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-      <Link isExternal href={siteConfig.links.instagram} title="Twitter">
-            <InstagramIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.facebook} title="Twitter">
-            <FacebookIcon className="text-default-500" />
-          </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
@@ -106,6 +98,28 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
+          <div className="flex gap-10 mt-10 justify-center">
+          <NavbarMenuItem>
+            <Link isExternal href={siteConfig.links.instagram} title="Twitter">
+              <InstagramIcon className="text-default-500" />
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link isExternal href={siteConfig.links.facebook} title="Twitter">
+              <FacebookIcon className="text-default-500" />
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link isExternal href={siteConfig.links.twitter} title="Twitter">
+              <TwitterIcon className="text-default-500" />
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link isExternal href={siteConfig.links.github} title="GitHub">
+              <GithubIcon className="text-default-500" />
+            </Link>
+          </NavbarMenuItem>
+          </div>
         </div>
       </NavbarMenu>
     </HeroUINavbar>
