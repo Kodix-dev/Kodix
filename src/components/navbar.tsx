@@ -98,7 +98,8 @@ export const Navbar = () => {
               </Link>
             </NavbarMenuItem>
           ))}
-          <div className="flex gap-10 mt-10 justify-center">
+          <div className="mt-10"><h2 className="font-bold flex justify-center">Follow Us</h2></div>
+          <div className="flex gap-10 mt-2 justify-center">
           <NavbarMenuItem>
             <Link isExternal href={siteConfig.links.instagram} title="Twitter">
               <InstagramIcon className="text-default-500" />
