@@ -3,8 +3,12 @@ import DefaultLayout from "@/layouts/default";
 import { siteConfig } from "@/config/site";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import TypingText from "@/components/typingText";
+import Marquee from "@/components/quotes";
+
 
 export default function IndexPage() {
+
   return (
     <DefaultLayout>
       <section>
@@ -138,6 +142,10 @@ export default function IndexPage() {
         </div>
           </motion.div>
       </section>
+
+    <TypingText />
+    <Marquee />
+      
       <motion.div
         initial={{ y: "10vh", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

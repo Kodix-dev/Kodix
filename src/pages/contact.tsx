@@ -93,7 +93,7 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2">
             <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200  ">
-              <span className="inline-block p-3 text-green-800 rounded-lg bg-orange-100/80 dark:bg-orange-200">
+              <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -122,7 +122,7 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
-              <span className="inline-block p-3 text-green-800 rounded-lg bg-orange-100/80 dark:bg-orange-200">
+              <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -156,7 +156,7 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
-              <span className="inline-block p-3 text-green-800 rounded-lg bg-orange-100/80 dark:bg-orange-200">
+              <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -193,10 +193,9 @@ export default function ContactPage() {
       <section className="min-h-screen lg:flex">
         <div className="flex flex-col justify-center w-full p-8 lg:px-12 xl:px-32 lg:w-1/2">
           <h3 className="text-2xl capitalize inline-block lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
-            hire us pleeease.
+            hire us.
           </h3>
-          <span className="text-5xl ml-4.5">🥹</span>
-          <span className="text-4xl">👉👈</span>
+
 
           <p className="mt-4 text-gray-500 dark:text-gray-400">
             Ask us anything, we would love to hear from you
@@ -223,6 +222,9 @@ export default function ContactPage() {
                 </svg>
               </a>
 
+              
+              {/*
+              commented out linked in for now, can be added later
               <a
                 className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
                 href="#"
@@ -247,6 +249,7 @@ export default function ContactPage() {
                   />
                 </svg>
               </a>
+              */}
 
               <a
                 className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
@@ -327,6 +330,7 @@ export default function ContactPage() {
                 name="message"
                 className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Message"
+                maxLength={400}
               ></textarea>
             </div>
 
