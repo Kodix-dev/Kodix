@@ -134,7 +134,7 @@ export default function MarqueeDemo() {
     <div className=" bg-background p-8 flex flex-col gap-8 items-center justify-center">
       <div className="w-full max-w-3xl space-y-8">
         <div className="space-y-2">
-          <Marquee direction="left" className="py-4" speed={150}>
+          <Marquee direction="left" className="py-4" speed={50}>
             {reviews.map((review) => (
               <ReviewCard
                 key={review.id}
