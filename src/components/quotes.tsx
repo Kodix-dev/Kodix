@@ -50,10 +50,10 @@ const Marquee = ({
         {`
           @keyframes scroll-left {
             from { transform: translateX(0); }
-            to { transform: translateX(-500%); }
+            to { transform: translateX(-150%); }
           }
           @keyframes scroll-right {
-            from { transform: translateX(-500%); }
+            from { transform: translateX(-50%); }
             to { transform: translateX(0); }
           }
         `}
@@ -134,7 +134,7 @@ export default function MarqueeDemo() {
     <div className=" bg-background p-8 flex flex-col gap-8 items-center justify-center">
       <div className="w-full max-w-3xl space-y-8">
         <div className="space-y-2">
-          <Marquee direction="left" className="py-4" speed={30}>
+          <Marquee direction="left" className="py-4" speed={150}>
             {reviews.map((review) => (
               <ReviewCard
                 key={review.id}
