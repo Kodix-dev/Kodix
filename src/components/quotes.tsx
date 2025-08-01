@@ -50,10 +50,10 @@ const Marquee = ({
         {`
           @keyframes scroll-left {
             from { transform: translateX(0); }
-            to { transform: translateX(-250%); }
+            to { transform: translateX(-500%); }
           }
           @keyframes scroll-right {
-            from { transform: translateX(-250%); }
+            from { transform: translateX(-500%); }
             to { transform: translateX(0); }
           }
         `}
