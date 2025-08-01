@@ -2,7 +2,7 @@ import { motion, useAnimationControls } from "framer-motion";
 import { useEffect, useState } from "react";
 
 function TypingText({
-  words = ["What do people say?"],
+  words = ["Why choose us?"],
   typingSpeed = 150,
   deleteSpeed = 100,
   delayBetweenWords = 1000,
