@@ -1,4 +1,5 @@
-import { Link } from "@heroui/link";
+//import { Link } from "@heroui/link";
+import { Link } from "react-router-dom";
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
@@ -29,7 +30,7 @@ export const Navbar = () => {
           <Link
             className="flex justify-start items-center gap-1"
             color="foreground"
-            href="/"
+            to="/"
           >
             <Logo />
             <p className="font-bold text-inherit">KODIX</p>
@@ -44,7 +45,7 @@ export const Navbar = () => {
                   "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
-                href={item.href}
+                to={item.href}
               >
                 {item.label}
               </Link>
@@ -58,16 +59,16 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.instagram} title="Twitter">
+          <Link to={siteConfig.links.instagram} title="Twitter">
             <InstagramIcon className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.facebook} title="Twitter">
+          <Link  to={siteConfig.links.facebook} title="Twitter">
             <FacebookIcon className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.twitter} title="Twitter">
+          <Link  to={siteConfig.links.twitter} title="Twitter">
             <TwitterIcon className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
+          <Link  to={siteConfig.links.github} title="GitHub">
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -91,8 +92,8 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href={item.href}
-                size="lg"
+                to={item.href}
+                
               >
                 {item.label}
               </Link>
@@ -101,22 +102,22 @@ export const Navbar = () => {
           <div className="mt-10"><h2 className="font-bold flex justify-center">Follow Us</h2></div>
           <div className="flex gap-10 mt-2 justify-center">
           <NavbarMenuItem>
-            <Link isExternal href={siteConfig.links.instagram} title="Twitter">
+            <Link  to={siteConfig.links.instagram} title="Twitter">
               <InstagramIcon className="text-default-500" />
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link isExternal href={siteConfig.links.facebook} title="Twitter">
+            <Link to={siteConfig.links.facebook} title="Twitter">
               <FacebookIcon className="text-default-500" />
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link isExternal href={siteConfig.links.twitter} title="Twitter">
+            <Link to={siteConfig.links.twitter} title="Twitter">
               <TwitterIcon className="text-default-500" />
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link isExternal href={siteConfig.links.github} title="GitHub">
+            <Link to={siteConfig.links.github} title="GitHub">
               <GithubIcon className="text-default-500" />
             </Link>
           </NavbarMenuItem>
