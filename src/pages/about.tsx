@@ -158,7 +158,7 @@ export default function DocsPage() {
               >
                 <div
                   key={idx}
-                  className="p-6 h-full rounded-2xl shadow-md border-gray backdrop-blur dark:shadow-orange-400 dark:hover:shadow-violet-500 shadow-violet-500 hover:shadow-orange-300  space-y-2"
+                  className="p-6 h-full rounded-2xl shadow border-gray backdrop-blur dark:shadow-orange-400 dark:hover:shadow-violet-500 shadow-violet-500 hover:shadow-orange-300  space-y-2"
                 >
                   <h3 className="text-xl font-semibold">{value.title}</h3>
                   <p className="text-base leading-relaxed">
