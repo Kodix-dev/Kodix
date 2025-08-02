@@ -154,7 +154,8 @@ export default function IndexPage() {
               >
                 <img
                   className="w-full max-w-xs mx-auto lg:max-w-lg xl:max-w-xl"
-                  src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
+                  //src="https://landingfoliocom.imgix.net/store/collection/dusk/images/hero/1/3d-illustration.png"
+                  src="/3d-illustration-t.png"
                   alt="swirly 3D illustration"
                 />
               </motion.div>
