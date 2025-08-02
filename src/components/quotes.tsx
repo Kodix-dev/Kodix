@@ -102,7 +102,7 @@ export default function MarqueeDemo() {
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
       rating: 5,
       review:
-        "kodix is a game changer. 100% recommend!.",
+        "kodix is a game changer. 100% recommend!",
     },
     {
       id: 2,
