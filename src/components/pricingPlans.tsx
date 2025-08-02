@@ -18,7 +18,7 @@ export const PricingPlans = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            <div className="h-full border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+            <div className="h-full border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 backdrop-blur">
               <div className="p-6">
                 <h2 className="text-xl leading-6 font-bold">Basic</h2>
                 <p className="mt-2 text-base leading-tight">
@@ -186,7 +186,7 @@ export const PricingPlans = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-          <div className="h-full border shadow-[0px_8px_19px_-2px_rgba(173,_0,_255,_0.65)] dark:shadow-[0px_8px_19px_-2px_rgba(173,_0,_255,_0.95)] border-slate-200 rounded-lg divide-y divide-slate-200 ">
+          <div className="h-full border backdrop-blur shadow-[0px_8px_19px_-2px_rgba(173,_0,_255,_0.65)] dark:shadow-[0px_8px_19px_-2px_rgba(173,_0,_255,_0.95)] border-slate-200 rounded-lg divide-y divide-slate-200 ">
             <div className="p-6">
               <h2 className="text-xl leading-6 font-bold">Professional</h2>
               <p className="mt-2 text-base leading-tight">
@@ -377,7 +377,7 @@ export const PricingPlans = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-          <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200">
+          <div className="border border-slate-200 rounded-lg shadow-sm divide-y divide-slate-200 backdrop-blur">
             <div className="p-6">
               <h2 className="text-xl leading-6 font-bold">Premium</h2>
               <p className="mt-2 text-base leading-tight">

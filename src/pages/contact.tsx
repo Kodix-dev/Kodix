@@ -156,7 +156,7 @@ export default function ContactPage() {
   </svg> */}
 
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2">
-            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200  ">
+            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200 dark:border-slate-900 dark:shadow-white/10">
               <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
+            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200 dark:border-slate-900 dark:shadow-white/10">
               <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +219,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200">
+            <div className="rounded-2xl shadow-lg p-6 backdrop-blur border border-gray-200 dark:border-slate-900 dark:shadow-white/10">
               <span className="inline-block p-3 text-violet-600 rounded-lg bg-gradient-to-r from-orange-400 to-purple-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -70,7 +70,7 @@ interface ReviewCardProps {
 }
 
 const ReviewCard = ({ avatar, name, rating, review }: ReviewCardProps) => (
-  <div className="w-80 p-4 bg-card rounded-lg border border-border shadow-sm">
+  <div className="w-80 p-4  rounded-lg border border-border shadow-sm backdrop-blur">
     <div className="flex items-center gap-3 mb-3">
       <img
         src={avatar}
@@ -131,7 +131,7 @@ export default function MarqueeDemo() {
   ];
 
   return (
-    <div className=" bg-background flex flex-col gap-8 items-center justify-center">
+    <div className="  flex flex-col gap-8 items-center justify-center">
       <div className="w-full max-w-3xl space-y-8">
         <div className="space-y-2">
           <Marquee direction="left" className="py-4" speed={50}>

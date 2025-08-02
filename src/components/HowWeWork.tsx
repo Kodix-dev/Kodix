@@ -54,7 +54,7 @@ export default function HowWeWork() {
       >
             <div
               key={index}
-              className="flex flex-col border sm:flex-row items-center gap-4 rounded-2xl shadow-md p-6 backdrop-blur"
+              className="flex flex-col border sm:flex-row items-center gap-4 rounded-2xl shadow-md p-6 backdrop-blur border-gray-200 dark:border-slate-900 dark:shadow-white/10"
             >
               <div className="text-4xl">{step.icon}</div>
               <div>
