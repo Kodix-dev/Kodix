@@ -51,7 +51,7 @@ export default function DocsPage() {
 
         {/* Core Values */}
         <div>
-          <h2 className="text-3xl font-semibold text-center mb-10">
+          <h2 className="text-3xl font-semibold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-purple-500">
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -111,14 +111,14 @@ export default function DocsPage() {
           <h2 className="text-3xl md:text-4xl py-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-500">
             Let’s Build Something Great Together
           </h2>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10">
             Whether you're starting from scratch or revamping an existing
             project, Kodix is ready to bring your vision to life with skill,
             passion, and precision.
           </p>
           <Link
             to={siteConfig.navItems[3].href}
-            className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide bg-gradient-to-r from-orange-500 to-purple-500 capitalize text-white rounded-md hover:from-orange-600 hover:to-purple-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 transition-colors duration-300"
+            className="w-full px-6 py-3 mt-10 text-sm font-medium tracking-wide bg-gradient-to-r from-orange-500 to-purple-500 capitalize text-white rounded-md hover:from-orange-600 hover:to-purple-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 transition-colors duration-300"
             role="button"
           >
             Get in Touch
