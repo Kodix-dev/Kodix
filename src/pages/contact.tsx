@@ -111,7 +111,7 @@ export default function ContactPage() {
               </span>
 
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                Chat to sales
+                Reach out to us
               </h2>
               <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                 Speak to our friendly team.
