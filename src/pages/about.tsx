@@ -198,7 +198,7 @@ export default function DocsPage() {
             passion, and precision.
           </p>
           <Link
-            to={siteConfig.navItems[3].href}
+            to={siteConfig.navItems[2].href}
             className="w-full px-6 py-3 mt-10 text-sm font-medium tracking-wide bg-gradient-to-r from-orange-500 to-purple-500 capitalize text-white rounded-md hover:from-orange-600 hover:to-purple-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 transition-colors duration-300"
             role="button"
           >

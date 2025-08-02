@@ -96,7 +96,7 @@ export default function IndexPage() {
               <div className="relative inline-flex items-center justify-center mt-8 sm:mt-12 group">
                 <div className="absolute transition-all duration-200 rounded-full -inset-px bg-gradient-to-r from-orange-500 to-purple-500 group-hover:shadow-lg group-hover:shadow-red-500/50"></div>
                 <Link
-                  to={siteConfig.navItems[2].href}
+                  to={siteConfig.navItems[1].href}
                   className="relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold border border-transparent rounded-full"
                   role="button"
                 >
