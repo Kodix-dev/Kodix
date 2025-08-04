@@ -115,7 +115,7 @@ export default function MarqueeDemo() {
     {
       id: 3,
       name: "Inseram Khan",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=emma",
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=james",
       rating: 5,
       review:
         "Not only does Kodix provide a quality service, but they are honest and diligent in their work as well. Highly recommend!",
@@ -123,7 +123,7 @@ export default function MarqueeDemo() {
     {
       id: 4,
       name: "James Wilson",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=james",
+      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=john",
       rating: 5,
       review:
         "Very impressed with the quality and attention to detail. A fantastic product overall.",
