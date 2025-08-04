@@ -12,6 +12,7 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       <section>
+        <h1>TESTTT</h1>
       <svg
     className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1] opacity-20"
     viewBox="0 0 2000 723"
