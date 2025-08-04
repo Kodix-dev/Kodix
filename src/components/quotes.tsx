@@ -114,11 +114,11 @@ export default function MarqueeDemo() {
     },
     {
       id: 3,
-      name: "Emma Davis",
+      name: "Inseram Khan",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=emma",
       rating: 5,
       review:
-        "Absolutely love it! The features are exactly what I needed, and it's so easy to use.",
+        "Not only does Kodix provide a quality service, but they are honest and diligent in their work as well. Highly recommend!",
     },
     {
       id: 4,
