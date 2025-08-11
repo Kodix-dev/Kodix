@@ -26,7 +26,7 @@ export const PricingPlans = () => {
                 </p>
                 <p className="mt-8">
                   <span className="text-4xl font-bold tracking-tighter">
-                    €150
+                   €40+
                   </span>
                 </p>
                 <Link
@@ -194,7 +194,7 @@ export const PricingPlans = () => {
               </p>
               <p className="mt-8">
                 <span className="text-4xl font-bold tracking-tighter">
-                  €500
+                  €350+
                 </span>
               </p>
               <Link
@@ -385,7 +385,7 @@ export const PricingPlans = () => {
               </p>
               <p className="mt-8">
                 <span className="text-4xl font-bold tracking-tighter">
-                  €1,200+
+                  €800+
                 </span>
               </p>
               <Link
